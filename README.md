@@ -11,7 +11,7 @@ The normal usage of a REST service.
 
 Supported methods:
 
-###POST /data
+### POST /data
 
 Create an object in the repository, identified by an id. The id may be given in the `id` header. 
 If not, a random id will be autoassigned.
@@ -32,7 +32,7 @@ Examples:
 
 `curl -H"id:4" http://localhost:8010/data -X POST -F data='{"value": "json"};type=application/json' -H"Content-Type: multipart/form -data"`
 
-###GET /data/{id}
+### GET /data/{id}
 
 Retrieves an object previously stored. The content type of the response is the one set when storing the object.
 
@@ -46,7 +46,7 @@ Examples:
 
 `curl -v localhost:8010/data/5`
 
-###DELETE /data/{id}
+### DELETE /data/{id}
 
 Removes an object from the repository.
 
